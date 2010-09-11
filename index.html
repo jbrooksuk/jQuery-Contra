@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr"> 
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+<title>Konami Code (Contra) in jQuery</title> 
+ 
+<script type="text/javascript" src="jquery.js"></script> 
+<script type="text/javascript" src="jquery.contra.js"></script> 
+ 
+<script type="text/javascript"> 
+$(function() {
+    $.contra(function() {
+    	$(document).children().each(function() {
+    		$(this).fadeOut();
+    	});
+    });
+}); 
+</script> 
+ 
+</head> 
+ 
+<body> 
+ 
+<h1> 
+Konami Code (Contra) in jQuery
+</h1> 
+ 
+<p>You know the cheat! UP, UP, DOWN, DOWN, LEFT, RIGHT, LEFT, RIGHT, B, A, ENTER!</p> 
+
+</body> 
+<script type="text/javascript"> 
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script> 
+<script type="text/javascript"> 
+try {
+var pageTracker = _gat._getTracker("UA-6698036-8");
+pageTracker._trackPageview();
+} catch(err) {}</script> 
+</html> 
