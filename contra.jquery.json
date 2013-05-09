@@ -6,9 +6,10 @@
         "contra",
         "easter-egg"
     ],
-    "version": "2.0.5",
+    "version": "2.0.6",
     "author": {
         "name": "James Brooks",
+        "email": "jbrooksuk@me.com",
         "url": "http://james.brooks.so"
     },
     "licenses": [
