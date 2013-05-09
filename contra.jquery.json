@@ -6,7 +6,7 @@
         "contra",
         "easter-egg"
     ],
-    "version": "2.0.6",
+    "version": "2.0.7",
     "author": {
         "name": "James Brooks",
         "email": "jbrooksuk@me.com",
@@ -19,7 +19,7 @@
         }
     ],
     "bugs": "https://github.com/jbrooksuk/jQuery-Contra/issues",
-    "homepage": "https://jbrooksuk.github.io/jQuery-Contra",
+    "homepage": "http://jbrooksuk.github.io/jQuery-Contra",
     "docs": "https://github.com/jbrooksuk/jQuery-Contra#jquery-contra-code",
     "download": "https://github.com/jbrooksuk/jQuery-Contra",
     "dependencies": {
