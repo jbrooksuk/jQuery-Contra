@@ -1,40 +1,56 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
-<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr"> 
+<!DOCTYPE html>
 <head> 
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
-<title>Konami Code (Contra) in jQuery</title> 
- 
-<script type="text/javascript" src="jquery.js"></script> 
-<script type="text/javascript" src="jquery.contra.js"></script> 
- 
-<script type="text/javascript"> 
-$(function() {
-    $.contra(function() {
-    	$(document).children().each(function() {
-    		$(this).fadeOut();
-    	});
-    }, { 'scope' : $('h1') });
-}); 
-</script> 
- 
-</head> 
- 
-<body> 
- 
-<h1> 
-Konami Code (Contra) in jQuery
-</h1> 
- 
-<p>You know the cheat! UP, UP, DOWN, DOWN, LEFT, RIGHT, LEFT, RIGHT, B, A, ENTER!</p>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Konami Code (Contra) in jQuery</title>
 
-</body> 
-<script type="text/javascript"> 
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-</script> 
-<script type="text/javascript"> 
-try {
-var pageTracker = _gat._getTracker("UA-6698036-8");
-pageTracker._trackPageview();
-} catch(err) {}</script> 
+	<meta name="author" content="James Brooks <http://james.brooks.so>">
+	<meta name="viewport" content="width=device-width">
+</head>
+
+<body>
+	<h1>Konami Code (Contra) in jQuery</h1> 
+	<p>You know the cheat! UP, UP, DOWN, DOWN, LEFT, RIGHT, LEFT, RIGHT, B, A, ENTER!</p>
+</body>
+
+<script>
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-6698036-8']);
+	_gaq.push(['_setAllowLinker', true]);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+
+<script src="jquery.js"></script> 
+<script src="jquery.contra.js"></script> 
+<script>
+	var startedContra = false;
+	$(function() {
+		var $docChildren = $(document).children();
+		$.contra({ 
+			begin: function() {
+				if($docChildren.is(":visible") === false) $docChildren.show(); // Reset if hidden.
+				
+				startedContra = !startedContra;
+
+				if(startedContra) console.log("Begun Contra code.");
+			},
+			fail: function() {
+				if(startedContra) {
+					console.log("Unlucky!");
+					startedContra = false;
+				}
+			},
+			success: function() {
+				$docChildren.fadeOut();
+				startedContra = false;
+			}
+		});
+	}); 
+</script>
 </html> 
