@@ -1,5 +1,5 @@
 # jQuery Contra Code
-Easily create customizable Contra Code style Easter eggs in your web application.
+Easily create customizable Contra Code style Easter-eggs in your web application.
 
 # Usage
 Getting up and running is really easy!

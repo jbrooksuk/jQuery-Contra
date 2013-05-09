@@ -1,0 +1,27 @@
+{
+    "name": "contra",
+    "title": "jQuery Contra",
+    "description": "Easily create customizable Contra Code style Easter-eggs in your web application.",
+    "keywords": [
+        "contra",
+        "easter-egg"
+    ],
+    "version": "2.0.0",
+    "author": {
+        "name": "James Brooks",
+        "url": "http://james.brooks.so"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "http://jbrooksuk.mit-license.org"
+        }
+    ],
+    "bugs": "https://github.com/jbrooksuk/jQuery-Contra/issues",
+    "homepage": "https://github.com/jbrooksuk/jQuery-Contra",
+    "docs": "https://github.com/jbrooksuk/jQuery-Contra",
+    "download": "https://github.com/jbrooksuk/jQuery-Contra",
+    "dependencies": {
+        "jquery": ">=1.4"
+    }
+}
