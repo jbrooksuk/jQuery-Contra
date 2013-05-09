@@ -19,7 +19,7 @@
     ],
     "bugs": "https://github.com/jbrooksuk/jQuery-Contra/issues",
     "homepage": "https://jbrooksuk.github.io/jQuery-Contra",
-    "docs": "https://github.com/jbrooksuk/jQuery-Contra",
+    "docs": "https://github.com/jbrooksuk/jQuery-Contra#jquery-contra-code",
     "download": "https://github.com/jbrooksuk/jQuery-Contra",
     "dependencies": {
         "jquery": ">=1.4"
